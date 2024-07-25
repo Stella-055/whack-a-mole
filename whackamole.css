@@ -1,0 +1,37 @@
+body{
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#elements-container{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ margin-top: 50px;
+
+}
+.mudmole{
+    margin: 70px;
+display: block;
+position: relative;
+
+
+}
+.dirt{
+    width: 200px;
+   z-index: 2;
+}
+
+
+  .mole {
+       display: none;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 80px; /* Adjust the width as needed */
+        height: 150px; /* Adjust the height as needed */
+       
+    }
